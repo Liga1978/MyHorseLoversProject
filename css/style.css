@@ -1,0 +1,54 @@
+table {
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(194, 247, 194);
+}
+
+h1,
+h2 {
+  color: darkgreen;
+  font-style: italic;
+}
+
+#cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.table {
+  border: 1px solid green;
+}
+
+.memberHorse {
+  flex-basis: auto;
+}
+
+.tableImage {
+  width: 100px;
+  height: 90px;
+}
+
+.horsepicture {
+  height: 200px;
+  width: 250px;
+}
+
+#horsepicture {
+  height: 300px;
+  width: 200px;
+}
+
+a:hover,
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
