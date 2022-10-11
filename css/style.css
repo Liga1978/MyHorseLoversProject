@@ -1,3 +1,7 @@
+body {
+  padding: 30px;
+}
+
 table {
   width: 100%;
 }
@@ -24,6 +28,10 @@ h2 {
   justify-content: space-around;
 }
 
+.slider {
+  align-content: center;
+}
+
 .table {
   border: 1px solid green;
 }
@@ -43,12 +51,77 @@ h2 {
 }
 
 #horsepicture {
-  height: 300px;
-  width: 200px;
+  height: auto;
+  width: 250px;
 }
 
 a:hover,
 img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nameError {
+  display: none;
+  font-size: 2em;
+  color: rgb(226, 12, 12);
+}
+
+#nameError.visible {
+  display: block;
+}
+
+#nameError2 {
+  display: none;
+  font-size: 2em;
+  color: rgb(226, 12, 12);
+}
+
+#nameError2.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: rgb(226, 12, 12);
+}
+
+.collapsible {
+  margin: 10px 0px 10px 0px;
+  background-color: #cff5d1;
+  color: #444;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.collapsibleContent {
+  padding: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #cff5d1;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #cff5d1;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 50%;
+  height: 100%;
+  top: 10%;
+  left: 50%;
+  bottom: 0;
+  background-color: rgba(194, 247, 194, 0.5);
+  opacity: 2;
+  cursor: pointer;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#buttonDiv {
+  padding-bottom: 10px;
 }
